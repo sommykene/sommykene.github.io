@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SOMKENE.CO.UK | PORTFOLIO</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+
+    <style>
+        /* To all the title to change size dynamically depending on the screen size */
+
+        /* xs < 768 */
+        @media screen and (max-width: 767px) {
+            .title {
+                font-size: 60px;
+            }
+        }
+
+        /* sm */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .title {
+                font-size: 60px;
+            }
+        }
+
+        /* md */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .title {
+                font-size: 70px;
+            }
+        }
+
+        /* lg */
+        @media screen and (min-width: 1200px) {
+            .title {
+                font-size: 80px;
+            }
+        }
+
+        /* this is the main body styling */
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        body::after {
+            content: '';
+            display: block;
+        }
+
+        .title {
+            font-family: 'DM Serif Display', serif;
+            text-align: center;
+        }
+
+        /* footer {
+            text-align: center;
+        } */
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .greyBackground {
+            background-color: rgba(128, 128, 128, 0.15);
+        }
+
+        h2,
+        h4 {
+            padding-top: 10px;
+            text-align: center;
+            font-family: 'Vollkorn', serif;
+        }
+
+        /* this is the navigation bar */
+        #nav-menu {
+            justify-content: center;
+            width: 100%;
+        }
+
+        #nav-menu li a {
+            color: grey;
+            font-size: 18px;
+            font-weight: 100;
+        }
+
+        /* this adds the line under the active page */
+        .active::after {
+            display: inline-block;
+            text-align: center;
+            content: '';
+            width: 80%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-left: 10%;
+        }
+
+        li a {
+            position: relative;
+        }
+
+        /* adds the line under the page when hovered over */
+        #nav-menu li a:hover::after {
+            display: inline-block;
+            text-align: center;
+            content: '';
+            width: 80%;
+            height: 2px;
+            background: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-left: 10%;
+        }
+
+        /* projects */
+        .projects {
+            padding: 15px;
+        }
+
+        .projectsDesc {
+            text-align: center;
+            font-family: 'Vollkorn', serif;
+            font-size: 17px;
+        }
+
+        .portfolio-items {
+            text-align: center;
+        }
+
+        .display-images {
+            width: 100%;
+        }
+
+        .travellers {
+            padding-top: 20px;
+        }
+
+        .languagesHeading {
+            font-weight: 600;
+            font-family: 'vollkorn', serif;
+            font-size: 18px;
+        }
+
+        .languages {
+            font-style: italic;
+            font-family: 'Vollkorn', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-bar">
+        <h1 class="title m-3">SOMKENE.CO.UK</h1>
+        <nav class="navbar navbar-expand-lg navbar-light greyBackground">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/portfolio.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">BLOG</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container projects">
+        <h2>Latest Projects</h2>
+        <div class="projectsDesc" style="line-height: 50%;">
+            <p>Below are the projects that I have worked on</p>
+            <p>Click the image for indepth details of each project</p>
+        </div>
+
+        <div class="portfolio-items">
+            <div class="row">
+                <div class="col">
+                    <h4>Travellers.com</h4>
+                    <img class="display-images" src="Portfolio Images/Travellers.com/Homepage.png">
+                    <div class="travellers">
+                        <a class="languagesHeading">Languages/Frameworks Used:</a>
+                        <p class="languages">HTML, CSS, JS, NodeJS, Express, MongoDB</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Travellers.com</h4>
+                    <img class="display-images" src="Portfolio Images/Travellers.com/Homepage.png">
+                    <div class="travellers">
+                        <a class="languagesHeading">Languages/Frameworks Used:</a>
+                        <p class="languages">HTML, CSS, JS, NodeJS, Express, MongoDB</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Travellers.com</h4>
+                    <img class="display-images" src="Portfolio Images/Travellers.com/Homepage.png">
+                    <div class="travellers">
+                        <a class="languagesHeading">Languages/Frameworks Used:</a>
+                        <p class="languages">HTML, CSS, JS, NodeJS, Express, MongoDB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right align">
+            <a>See More</a>
+        </div>
+    </div>
+
+    <footer class="greyBackground">
+        <a>Designed By Som E-Agwuegbo</a>
+
+        <!-- For Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </footer>
+</body>
+
+</html>

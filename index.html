@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SOMKENE.CO.UK | HOME</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+
+    <style>
+        /* To all the title to change size dynamically depending on the screen size */
+
+        /* xs < 768 */
+        @media screen and (max-width: 767px) {
+            .title {
+                font-size: 60px;
+            }
+        }
+
+        /* sm */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .title {
+                font-size: 60px;
+            }
+        }
+
+        /* md */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .title {
+                font-size: 70px;
+            }
+        }
+
+        /* lg */
+        @media screen and (min-width: 1200px) {
+            .title {
+                font-size: 80px;
+            }
+        }
+
+        /* this is the main body styling */
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        body::after {
+            content: '';
+            display: block;
+        }
+
+        .title {
+            font-family: 'DM Serif Display', serif;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        .greyBackground {
+            background-color: rgba(128, 128, 128, 0.15);
+        }
+
+        h2,
+        h4 {
+            padding-top: 10px;
+            text-align: center;
+            font-family: 'Vollkorn', serif;
+        }
+
+        /* this is the navigation bar */
+        #nav-menu {
+            justify-content: center;
+            width: 100%;
+        }
+
+        #nav-menu li a {
+            color: grey;
+            font-size: 18px;
+            font-weight: 100;
+        }
+
+        /* this adds the line under the active page */
+        .active::after {
+            display: inline-block;
+            text-align: center;
+            content: '';
+            width: 80%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-left: 10%;
+        }
+
+        li a {
+            position: relative;
+        }
+
+        /* adds the line under the page when hovered over */
+        #nav-menu li a:hover::after {
+            display: inline-block;
+            text-align: center;
+            content: '';
+            width: 80%;
+            height: 2px;
+            background: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-left: 10%;
+        }
+
+        /* section 1: picture and description about me */
+        .aboutMe {
+            padding: 50px;
+            text-align: justify;
+            font-family: 'Vollkorn', serif;
+            font-size: 20px;
+            margin: auto;
+        }
+
+        .personalPhoto {
+            display: block;
+            max-width: 100%;
+            max-height: 300px;
+            height: auto;
+            margin: auto;
+        }
+
+        .aboutMeText {
+            margin: auto;
+        }
+
+        .contactInfo {
+            padding: 20px;
+            text-align: center;
+            font-family: 'Vollkorn', serif;
+            font-size: 20px;
+        }
+
+
+        /* section 2, 3: education and achievements */
+        .education,
+        .achievements {
+            padding: 15px;
+        }
+
+        .horizontalLine {
+            background-color: black;
+            width: 5px;
+            height: 100px;
+            margin: auto;
+            /* position: absolute;
+            z-index: 2; */
+
+        }
+
+        .right {
+            text-align: end;
+        }
+
+        .align {
+            margin: auto;
+        }
+
+
+        .achievements .single-row {
+            height: 50px;
+        }
+
+        /* section 4: projects */
+        .projects {
+            padding: 15px;
+        }
+
+        .projectsDesc {
+            text-align: center;
+            font-family: 'Vollkorn', serif;
+            font-size: 17px;
+        }
+
+        .portfolio-items {
+            text-align: center;
+        }
+
+        .display-images {
+            width: 100%;
+        }
+
+        .travellers {
+            padding-top: 20px;
+        }
+
+        .languagesHeading {
+            font-weight: 600;
+            font-family: 'vollkorn', serif;
+            font-size: 18px;
+        }
+
+        .languages {
+            font-style: italic;
+            font-family: 'Vollkorn', serif;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="header-bar">
+        <h1 class="title m-3">SOMKENE.CO.UK</h1>
+        <nav class="navbar navbar-expand-lg navbar-light greyBackground">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/portfolio.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">BLOG</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container aboutMe row">
+        <a class="col-md-3"><img class="personalPhoto" src="myPhoto.jpg"></a>
+        <a class="col-md-8 p-2 aboutMeText">
+            <p>Hi, my name is Som. I am a prospective Computer Science Student who will be attending university
+                after Summer</p>
+            <p>I have finished my A Levels this Summer, where I studied Maths, Further Maths and Computer Science</p>
+            <p>With the website I hope to showcase some of my works that I complete as well as document the work that
+                are still in progress</p>
+            <p>Be sure to check out the projects that I have completed and keep an eye out for my blog</p>
+        </a>
+    </div>
+
+    <div class="container mx-auto row greyBackground">
+        <div class="container col education">
+            <h2>Education</h2>
+            <div class="row">
+                <div class="col-3 right align">
+                    <a>2017-2019</a>
+                    <br>
+                    <small>A-LEVELS</small>
+                </div>
+                <a class="horizontalLine"></a>
+                <div class="col align eduDesc">
+                    <a class="">Studied Maths, Futher Maths and Computer Science</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 right align">
+                    <a>2015-2017</a>
+                    <br>
+                    <small>GCSE</small>
+                </div>
+                <a class="horizontalLine"></a>
+                <div class="col align eduDesc">
+                    <a>I achieved 10 GCSE's, with an 8 in Maths and a 6 and 5 in English Literature and Language
+                        respectively</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container col achievements">
+            <h2>Experience/Achievements</h2>
+            <div class="row ">
+                <div class="col-3 right align">
+                    <a>2019</a>
+                </div>
+                <a class="horizontalLine"></a>
+                <div class="col align eduDesc">
+                    <a class="">Prestigious Principal's Award</a>
+                    <br>
+                    <a>For achievements in Maths</a>
+                </div>
+            </div>
+            <div class="row single-row">
+                <div class="col-3 right align">
+                    <a>2017</a>
+                </div>
+                <a class="horizontalLine" style="height: 100%"></a>
+                <div class="col align eduDesc">
+                    <a>National Citizen Service (NCS)</a>
+                </div>
+            </div>
+            <div class="row single-row">
+                <div class="col-3 right align">
+                    <a>2015</a>
+                </div>
+                <a class="horizontalLine" style="height: 100%"></a>
+                <div class="col align eduDesc">
+                    <a>Bronze Duke Of Edinburgh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container projects">
+        <h2>Latest Projects</h2>
+        <div class="projectsDesc" style="line-height: 50%;">
+            <p>Below are the projects that I have worked on</p>
+            <p>Click the image for indepth details of each project</p>
+        </div>
+
+        <div class="portfolio-items">
+            <div class="row">
+                <div class="col">
+                    <h4>Travellers.com</h4>
+                    <img class="display-images" src="Portfolio Images/Travellers.com/Homepage.png">
+                    <div class="travellers">
+                        <a class="languagesHeading">Languages/Frameworks Used:</a>
+                        <p class="languages">HTML, CSS, JS, NodeJS, Express, MongoDB</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Travellers.com</h4>
+                    <img class="display-images" src="Portfolio Images/Travellers.com/Homepage.png">
+                    <div class="travellers">
+                        <a class="languagesHeading">Languages/Frameworks Used:</a>
+                        <p class="languages">HTML, CSS, JS, NodeJS, Express, MongoDB</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Travellers.com</h4>
+                    <img class="display-images" src="Portfolio Images/Travellers.com/Homepage.png">
+                    <div class="travellers">
+                        <a class="languagesHeading">Languages/Frameworks Used:</a>
+                        <p class="languages">HTML, CSS, JS, NodeJS, Express, MongoDB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right align">
+            <a>See More</a>
+        </div>
+    </div>
+
+    <div class="container greyBackground contactInfo">
+        <a>Email: SOMMYKENE@GMAIL.COM</a>
+        <br>
+        Linkedin: <a target="_blank" href="https://www.linkedin.com/in/someagwuegbo/">Som E-Agwuegbo</a>
+    </div>
+
+    <footer class="">
+        <a>Designed By Som E-Agwuegbo</a>
+
+        <!-- For Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </footer>
+</body>
+
+</html>
